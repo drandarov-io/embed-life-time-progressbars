@@ -8,7 +8,7 @@
 - life_length (1-999)
 
 ## Example URL
-https://drandarov-io.github.io/embed-life-time-progressbar/docs/?birth_day=15&birth_month=7&birth_year=1996&life_length=100
+https://drandarov-io.github.io/embed-life-time-progressbars/docs/?birth_day=15&birth_month=7&birth_year=1996&life_length=100
 
 ## Examples
 
