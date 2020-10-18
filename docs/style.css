@@ -2,21 +2,45 @@ html {
     background-color: #fff;
     font-family: 'Calibri', sans-serif;
     font-size: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 8px;
+    padding-right: 8px;
 }
 
 p {
+    display: flex;
+    height: 93%;
+    margin: 0;
+    align-items: center;
+
     float: right;
     color: #555;
     width: 150px;
 }
 
+.row {
+    display: table-row;
+}
+
 .meter {
-    margin-right: 180px;
+    display: block;
+    height: 93%;
+    min-height: 1px;
+
+    margin-right: 160px;
     background: #fff;
     border-radius: 5px;
-    display: block;
-    height: 25px;
-    margin-bottom: 10px;
     padding: 5px;
     border: 2px solid #444;
 }
@@ -24,10 +48,7 @@ p {
 .meter > span {
     display: block;
     height: 100%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 
 .black > span {
