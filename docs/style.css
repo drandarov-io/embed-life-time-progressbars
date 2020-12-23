@@ -3,9 +3,9 @@ html {
     font-family: 'Calibri', sans-serif;
     font-size: 15px;
     top: 0;
-    bottom: 8px;
+    bottom: 20px;
     left: 0;
-    right: 8px;
+    right: 20px;
     position: absolute;
 }
 
@@ -17,14 +17,14 @@ body {
 }
 
 p {
-    display: flex;
-    height: 93%;
+    height: 80%;
     margin: 0;
     align-items: center;
 
     float: right;
     color: #555;
     width: 150px;
+    display: flex;
 }
 
 .row {
@@ -32,14 +32,14 @@ p {
 }
 
 .meter {
-    display: block;
-    height: 93%;
+    display: flex;
+    align-items: center;
+    height: 80%;
     min-height: 1px;
 
     margin-right: 160px;
     background: #fff;
     border-radius: 5px;
-    padding: 5px;
     border: 2px solid #444;
 }
 
@@ -47,10 +47,13 @@ p {
     display: block;
     height: 100%;
     border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .black > span {
     background-color: #555;
     color: #555;
     background-image: linear-gradient(to bottom, #444, #333);
+    height: 70%
 }
