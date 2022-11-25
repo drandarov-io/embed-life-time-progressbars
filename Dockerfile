@@ -11,4 +11,6 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 # Copy the static files
 COPY ./docs /usr/share/nginx/html
 
-EXPOSE 80
+USER nginx
+
+EXPOSE 8080
