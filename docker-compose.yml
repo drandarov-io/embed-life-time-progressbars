@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+    app:
+        image: docker.cloudtrain.aws.msgoat.eu/cxp/dmitrij_drandarov/embed_life-life-time-progressbar:latest
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+        - 80:80
+        healthcheck:
+          test: ["CMD", "curl", "-f", "http://localhost/status"]
